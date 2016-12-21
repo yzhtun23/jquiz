@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Online Quiz / Questionnaire</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="jquery-1.4.2.js" ></script>
+<script type="text/javascript" src="jquiz.js"></script>
+<link rel="stylesheet" type="text/css" href="jquiz.css" />
+</head>
+<body>
+<div id="header">
+	<h1>Online Quiz / Questionnaire</h1>
+	<div>
+		User Name: <input id="name" type="text">
+		Password:  <input id="pass" type="password">
+		<input id="log" type="button" value="Login"> or
+		<input id="reg" type="button" value="Register">
+	</div>
+</div>
+<div id="editor">
+	<p>New Question:<br />
+	<input id="question" type="text"></p>
+	<P>Choices:</P>
+	<select id="choices" size="3"></select>
+	<input id="add" type="button" value="Add">
+	<input id="rem" type="button" value="Remove"> |
+	<input id="hlp" type="button" value="Help"><br />
+	<input id="ans" type="checkbox"><label for="ans">Correct answer</label>
+	<input id="sub" type="button" value="Submit">
+</div>
+<div id="content">
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Online Quiz / Questionnaire</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="jquiz.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+	<h1>Online Quiz / Questionnaire</h1>
+	<div>
+		User Name: <input type="text" id="name">	
+		Password:  <input type="password" id="pass">
+		<input type="button" value="Login" id="log"> or
+		<input type="button" value="Register" id="reg">
+	</div>
+</div>
+<div id="editor" style="display: block;">
+	<p>New Question:<br>
+	<input type="text" id="question"></p>
+	<p>Choices:</p>
+	<select size="3" id="choices"></select>
+	<input type="button" value="Add" id="add">
+	<input type="button" value="Remove" id="rem"> |
+	<input type="button" value="Help" id="hlp"><br>
+	<input type="checkbox" id="ans"><label for="ans">Correct answer</label>
+	<input type="button" value="Submit" id="sub">
+</div>
+<div id="content">
+	<h2 class="separator" id="optionBar">Show Quizes/Quesionnaires: 
+		<input type="checkbox" id="yours" checked><label for="yours"> Yours</label>&nbsp; 
+		<input type="checkbox" id="unanswered" checked><label for="unanswered"> Unanswered</label>&nbsp; 
+		<input type="checkbox" id="answered" checked><label for="answered"> Answered</label>&nbsp; 
+		<input type="checkbox" id="closed"><label for="closed"> Closed</label>
+	</h2>
+	<div class="quiz" id="quiz3" style="display: block;">
+		<em>Quiz.3:</em> Is jQuery an Ajax library? <span>(by user)</span>
+		<ol id="list3">
+			<li id="choice3_1"> <input type="button" onclick="postChoice(3,1)" value="Answer1"></li>
+			<li id="choice3_2"> <input type="button" onclick="postChoice(3,2)" value="Answer2"></li>
+		</ol>
+	</div>
+	<div class="quiz" id="quiz2" style="display: block;">
+		<em>Quiz.2:</em> Which color do you like best? <span>(by user)</span>
+		<ol id="list2">
+			<li id="choice2_1">Red : <strong id="num2_1" style="background-color: black;">0</strong></li>
+			<li id="choice2_2">Green : <strong id="num2_2" style="background-color: black;">0</strong></li>
+			<li id="choice2_3">Blue : <strong id="num2_3" style="background-color: black;">1</strong> <em class="yours">Your Answer</em></li>
+			<li id="choice2_4">Yellow : <strong id="num2_4" style="background-color: black;">0</strong></li>
+			<li id="choice2_5">Orange : <strong id="num2_5" style="background-color: black;">0</strong></li>
+			<li id="choice2_6">White : <strong id="num2_6" style="background-color: black;">0</strong></li>
+			<li id="choice2_7">Black : <strong id="num2_7" style="background-color: black;">0</strong></li>
+		</ol>
+	</div>
+	<div class="quiz" id="quiz1" style="display: block;">
+		<em>Quiz.1:</em> What is the highest mountain in Japan? <span>(by user2)</span>
+		<ol id="list1">
+			<li id="choice1_1">Mt. Asama : <strong id="num1_1" style="background-color: black;">0</strong></li>
+			<li class="correct" id="choice1_2">Mt. Fuji : <strong id="num1_2" style="background-color: black;">0</strong></li>
+			<li id="choice1_3">Mt. Unzen : <strong id="num1_3" style="background-color: black;">0</strong></li>
+		</ol>
+	</div>
+</div>
+</body>
+</html>

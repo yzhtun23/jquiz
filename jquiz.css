@@ -1,0 +1,86 @@
+@CHARSET "utf-8";
+* {
+	font-family: Tahoma;
+	font-size: 10pt; 
+}
+body, div, h1, h2, p {
+	margin: 0px;
+}
+#header {
+	background-color: #000080;
+	color: white;
+	width: 100%;
+	height: 35px;
+	border-bottom: 2px solid #000020;
+}
+#header h1 {
+	padding: 5px 20px;
+	font-size: 14pt;
+	float: left;
+	color: #FFFF80; 
+}
+#header div {
+	float: right;
+	padding: 5px; 
+}
+#name, #pass { width: 75px; }
+#editor {
+	width: 100%;
+	overflow: hidden;
+	background-color: #E0E0E0;
+	border-top:    2px solid #FFFFFF;
+	border-bottom: 2px solid #606060;
+	padding-bottom: 2px;
+}
+#editor * { vertical-align: top; margin: 5px 0px 5px 5px; }
+#editor p { float: left; }
+#editor input, #editor label { vertical-align: middle; margin: 5px 0px 0px 2px; }
+#editor select { float: left; width: 250px; font-size: 10pt; margin-right: 5px; }
+#editor option { margin: 0px 2px; }
+#question { width: 300px; }
+#sub { font-weight: bold; } 
+#content {
+	width: 100%;
+	overflow: auto;
+}
+#content input {
+	font-size: 8pt;
+}
+.quiz, h2 {
+	position: relative;
+	padding: 10px 20px 0px;
+	font-weight: bold;
+}
+h2 {
+	white-space: nowrap;
+}
+.separator {
+	background-color: #8080FF;
+	color: white;
+	padding: 3px 10px 5px;
+}
+.footer {
+	width: 100%;
+	font-size: 8pt;
+	background-color: #E0E0E0;
+	color: black;
+	text-align: center;
+	padding: 2px 0px;
+}	
+em {
+	font-family: "Arial";
+	color: blue;
+}
+ol {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+li {
+	font-weight: normal;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+span { font-weight: normal; color: blue; }
+strong { background-color: black; color: white; padding: 0px 3px; }
+.yours { color: red; font-weight: normal; }
+.correct { color: green; font-weight: bold; }
